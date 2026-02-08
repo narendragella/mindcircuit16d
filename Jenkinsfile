@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+tools{
+	maven 'maven3'
+}
     stages {
         stage('GIT REPO') {
             steps {
