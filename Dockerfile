@@ -1,7 +1,7 @@
 FROM maven AS buildstage
-RUN mkdir /opt/nagur
+RUN mkdir /opt/mindcircuit16d/
 WORKDIR /opt/mindcircuit16d/
-COPY ./mindcircuit16d/ .
+COPY . .
 RUN mvn clean install
 
 FROM tomcat
