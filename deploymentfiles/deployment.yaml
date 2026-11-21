@@ -15,6 +15,6 @@
       spec:
        containers:
         - name: microservices-container
-          image: narendragella/docker:8
+          image: narendragella/docker:9
           ports:
            - containerPort: 8080
